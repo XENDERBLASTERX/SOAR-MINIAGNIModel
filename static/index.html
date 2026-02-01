@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anti-Gravity SOC | Mini-SOAR Dashboard</title>
+    <meta name="description"
+        content="Premium Security Operations Center dashboard for Mini-SOAR platform - Real-time threat monitoring and response orchestration">
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <div class="logo-icon">⚡</div>
+                <div class="logo-text">
+                    <h1>Anti-Gravity SOC</h1>
+                    <span class="tagline">Security Orchestration Platform</span>
+                </div>
+            </div>
+            <div class="header-status">
+                <div class="mode-indicator tooltip-container" id="headerModeIndicator">
+                    <span class="mode-dot"></span>
+                    <span class="mode-text">LOADING...</span>
+                </div>
+                    <div class="tooltip" id="modeTooltip">Current SOAR response mode</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <ul class="nav-menu">
+                <li class="nav-item active" data-view="dashboard">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-label">Overview</span>
+                </li>
+                <li class="nav-item" data-view="cases">
+                    <span class="nav-icon">📁</span>
+                    <span class="nav-label">Cases</span>
+                </li>
+                <li class="nav-item" data-view="scanner">
+                    <span class="nav-icon">🔍</span>
+                    <span class="nav-label">Malware Scanner</span>
+                </li>
+                <li class="nav-item" data-view="control">
+                    <span class="nav-icon">🎛️</span>
+                    <span class="nav-label">SOAR Control</span>
+                </li>
+                <li class="nav-item" data-view="approvals">
+                    <span class="nav-icon">✓</span>
+                    <span class="nav-label">Approvals</span>
+                </li>
+                <li class="nav-item" data-view="logs">
+                    <span class="nav-icon">📜</span>
+                    <span class="nav-label">Activity Logs</span>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content" id="mainContent">
+            <!-- Views will be dynamically loaded here -->
+        </main>
+    </div>
+
+    <!-- Modal Container -->
+    <div class="modal" id="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content" id="modalContent">
+            <!-- Modal content will be dynamically loaded -->
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
