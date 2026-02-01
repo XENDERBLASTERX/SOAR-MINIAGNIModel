@@ -1,5 +1,5 @@
 // ============================================
-// ANTI-GRAVITY SOC - FRONTEND APPLICATION
+//  SOC - FRONTEND APPLICATION
 // ============================================
 
 // Global State
