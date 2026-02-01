@@ -1,4 +1,4 @@
-# Anti-Gravity SOC Dashboard - Quick Start Guide
+# SOC Dashboard - Quick Start Guide
 
 ## 🚀 Starting the Dashboard
 
@@ -152,7 +152,3 @@ See the walkthrough document for visual examples:
 3. **Show Mode Switching**: Demonstrate control over automation
 4. **View Case Details**: Open modal to show timeline
 5. **Check Activity Logs**: Prove full audit trail
-
----
-
-**The Anti-Gravity SOC Dashboard is ready for your demo!** 🚀
